@@ -1,29 +1,31 @@
 {
-    "name":"Intranet",
-    "description":"Software, para el manejo de todos los procesos de la empresa",
-    "author":"Oscar Ivan Muñoz Barajas, Slack",
-    "homepage":"www.indar.com.mx",
-    "version":"0.0.1",
-    "repository":{
-        "type":"git",
-        "url":"https://github.com/osmunoz/intranetNodejs.git"
+    "name": "Intranet",
+    "description": "Software, para el manejo de todos los procesos de la empresa",
+    "author": "Oscar Ivan Muñoz Barajas, Slack",
+    "homepage": "www.indar.com.mx",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/osmunoz/intranetNodejs.git"
     },
-    "licenses":[{
-        "type":"MIT",
-        "url":"https://github.com/osmunoz/intranetNodejs/blob/master/LICENSE"
-      }],
-    "main":"index",
-    "scripts":{
-      "start":""
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "https://github.com/osmunoz/intranetNodejs/blob/master/LICENSE"
+        }
+    ],
+    "main": "index",
+    "scripts": {
+        "start": ""
     },
-    "dependencies":{
-        "express":"4.x",
-        "angular":"1.6.8",
-        "angular-ui-bootstrap":"2.5.6",
-        "mail":"0.2.3",
-        "nodemailer":"4.4.1",
-        "bootstrap":"3.3.7",
-        "uikit":"3.0.0-beta.35",
-        "nodemon":"1.14.6"
+    "dependencies": {
+        "express": "4.x",
+        "angular": "1.6.8",
+        "angular-ui-bootstrap": "2.5.6",
+        "mail": "0.2.3",
+        "nodemailer": "4.4.1",
+        "bootstrap": "3.3.7",
+        "uikit": "3.0.0-beta.35",
+        "nodemon": "1.14.6"
     }
 }
