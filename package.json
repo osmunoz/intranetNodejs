@@ -26,6 +26,8 @@
         "nodemailer": "4.4.1",
         "bootstrap": "3.3.7",
         "uikit": "3.0.0-beta.35",
-        "nodemon": "1.14.6"
+        "nodemon": "1.14.6",
+        "url": "0.11.0",
+        "angular-route": "1.6.8"
     }
 }

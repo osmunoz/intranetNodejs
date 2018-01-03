@@ -15,8 +15,11 @@
     * @acess public
     * @author Slack
   */
-  function serv( app, express, port ) {
-    app = express();console.log( 'Se arranco el servidor en el puerto: '+port);
-    return app.listen( port );
+  //variables cargadas con los diferentes modulos.
+
+  function serv( app, port ) {
+    app.listen( port, function() {
+      console.log( 'Se arranco el servidor en el puerto: '+port);
+    });
   }
 exports.serv = serv;

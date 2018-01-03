@@ -7,3 +7,13 @@
 * @author Slack(Oscar Ivan Muñoz Barajas)
 * @version 0.0.1
 */
+  var express     =     require( 'express' );
+  var app         =     express();
+  var iniciar     =     require( '../app/app' );
+  var router      =     express.Router();
+
+  
+  app.get( '/', function( req, res ) {console.log( 'Hola mundote' );
+    res.render( '../views/index' );
+  });
+  iniciar.serv(app, '8081')

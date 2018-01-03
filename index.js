@@ -8,8 +8,4 @@
 */
 
   //se exporta un modulo de app
-  var iniciar     =   require( __dirname+ '/application/app/app' );
-  var express     =   require( 'express' );
-  var app;
-
-  iniciar.serv( app, express, '9000' );
+  var route     =     require( './application/router/route' );
