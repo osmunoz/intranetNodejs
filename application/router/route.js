@@ -11,9 +11,18 @@
   var app         =     express();
   var iniciar     =     require( '../app/app' );
   var router      =     express.Router();
+  var path        =     require( 'path' );
 
-  
-  app.get( '/', function( req, res ) {console.log( 'Hola mundote' );
-    res.render( '../views/index' );
+  // view engine setup
+  app.use( express.static(  path.join( __dirname, '../views' ) ) );
+  app.set( 'views', __dirname + '/../views' );
+  app.set( 'view engine', 'html' );
+
+  app.get( '/', function( req, res ) {
+    res.render( __dirname + '../views/index.html' );
   });
-  iniciar.serv(app, '8081')
+  //Error 404
+  app.get( '*', function( req, res ) {
+    res.send('What???',404);
+  });
+  iniciar.serv(app, '8081');
