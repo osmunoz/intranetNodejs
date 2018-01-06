@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
   <head>
-    <meta charset="utf-8" />
-    <title>Arrancando</title>
+      <meta charset="utf-8" />
+      <title>Login</title>
+      <link rel="shortcut icon" type="image/x-icon" href="/img/branico.ico"/>
+      <link rel="stylesheet" type="text/css" href="/css/style.css" />
+      <link rel="stylesheet" type="text/css" href="/css/uikit.min.css" />
+      <link rel="stylesheet" type="text/css" href="/css/uikit-rtl.min.css" />
   </head>
   <body>
-    <h1>Inicia el servidor</h1>
+      <div uk-grid></div>
+      <div uk-grid></div>
+      <div uk-grid></div>
+      <div uk-grid>
+        <!--<div class="uk-width-1-1">-->
+          <form class="uk-card uk-card-primary uk-card-body">
+            <div class="uk-card-title">
+              <h1 class="uk-h2"><span uk-icon="icon: bolt; 4.5"></span>&nbsp;Login</h1>
+            </div>
+            <div class="uk-margin">
+              <div class="uk-inline">
+                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                <input class="uk-input" type="text">
+              </div>
+            </div>
+            <div class="uk-margin">
+              <div class="uk-inline">
+                <span class="uk-form-icon uk-form-icon-flip" uk-icon="icon: lock"></span>
+                <input class="uk-input" type="password">
+              </div>
+            </div>
+            <p class="uk-margin">
+              <button class="uk-button uk-button-secondary uk-button-small">Entrar</button>
+              <button class="uk-button uk-button-danger uk-button-small" type="submit">Cancelar</button>
+            </p>
+          </form>
+        <!--</div>-->
+      </div>
+      <!-- CARGA LOS SCRIPTS-->
+      <script src="/js/jquery-3.2.1.min.js"></script>
+      <script src="/js/uikit.min.js"></script>
+      <script src="/js/uikit-icons.min.js"></script>
+      <script src="/js/angular.min.js"></script>
   </body>
 </html>

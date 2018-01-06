@@ -15,14 +15,18 @@
 
   // view engine setup
   app.use( express.static(  path.join( __dirname, '../views' ) ) );
+  app.use( '/',express.static( path.join( __dirname, '../../public' ) ),function(){
+    console.log("Here again!!");
+  } );
   app.set( 'views', __dirname + '/../views' );
   app.set( 'view engine', 'html' );
 
   app.get( '/', function( req, res ) {
-    res.render( __dirname + '../views/index.html' );
+    //res.render( __dirname + '../views/index.html' );
+    res.render( '/views/index.html' );
   });
   //Error 404
   app.get( '*', function( req, res ) {
-    res.send('What???',404);
+    res.status( 404 ).send( "<h1>What????</h1>" );
   });
   iniciar.serv(app, '8081');
