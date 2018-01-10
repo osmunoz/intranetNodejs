@@ -14,16 +14,16 @@
   var path        =     require( 'path' );
 
   // view engine setup
-  app.use( express.static(  path.join( __dirname, '../views' ) ) );
-  app.use( '/',express.static( path.join( __dirname, '../../public' ) ),function(){
+  app.use( express.static(  path.join( __dirname, '../src' ) ) );
+  app.use( '/',express.static( path.join( __dirname, '../../application/src/assets' ) ),function(){
     console.log("Here again!!");
   } );
-  app.set( 'views', __dirname + '/../views' );
+  app.set( 'views', __dirname + '/../src' );
   app.set( 'view engine', 'html' );
 
   app.get( '/', function( req, res ) {
     //res.render( __dirname + '../views/index.html' );
-    res.render( '/views/index.html' );
+    res.render( '/src/index.html' );
   });
   //Error 404
   app.get( '*', function( req, res ) {
