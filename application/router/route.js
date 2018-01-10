@@ -9,13 +9,13 @@
 */
   var express     =     require( 'express' );
   var app         =     express();
-  var iniciar     =     require( '../app/app' );
+  var iniciar     =     require( '../serv/app' );
   var router      =     express.Router();
   var path        =     require( 'path' );
 
   // view engine setup
   app.use( express.static(  path.join( __dirname, '../src' ) ) );
-  app.use( '/',express.static( path.join( __dirname, '../../application/src/assets' ) ),function(){
+  app.use( '/',express.static( path.join( __dirname, '../src/assets' ) ),function(){
     console.log("Here again!!");
   } );
   app.set( 'views', __dirname + '/../src' );
